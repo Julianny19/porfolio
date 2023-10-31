@@ -1,0 +1,754 @@
+body{
+    background-color: #053C5E;
+}
+.container{
+    display: grid;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: 2% 98%;
+}
+.pausa { 
+	animation-play-state: paused !important;
+}
+/*barra superior*/
+header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #130c01;
+    padding: .5em 1.5em;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+}
+header h1{
+    text-align: right;
+    font-family: monospace;
+    font-size: 2em;
+    color: #62929E;
+}
+/*barra lateral*/
+nav{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: #130c01;
+    height: 120vh;
+    width: 5%;
+    position: fixed;
+    z-index: 1200;
+}
+nav img{
+    width: 100%;
+}
+nav a{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 0 100% 38%;
+    font-size: 1.5em;
+    display: block;
+}
+nav a:nth-child(1){
+margin-top: 100%;
+}
+nav a:hover{
+    color:#62929E;
+    font-weight: bolder;
+}
+/*main*/
+main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 95vh 95vh 95vh 95vh;
+    
+}
+/*primer vistazo*/
+main>section:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 80vw;
+}
+main>section:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    padding: 3em;
+    justify-content: end;
+}
+h2{
+    text-align: end;
+    align-self: flex-end;
+    font-size: 4em;
+    z-index: 80;
+    animation: aparecer 3s ease-in-out;
+}
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*tangram*/
+.mensaje{
+    width: 10%;
+    margin: 15% 0 0 40%;
+    color: #ffffff;
+    visibility: hidden;
+    animation: mensaje 5s linear 4.8s;
+}
+#square { 
+    width: 107px; 
+    height: 107px; 
+    background: #0000ff; 
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 162px;
+    left: 190px;
+    animation: cuadrado 4s ease-out 0.8s backwards;
+}
+
+#triangle1 { 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 75px 0 75px 75px;
+    border-color: transparent transparent transparent #9400d3 ; 
+    left: 169px;
+    top:65px;
+    animation: trianguloP1 4s ease-out 0.8s backwards;
+}
+
+#triangle2 { 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 0 150px 150px;
+    border-color: transparent transparent   transparent #ffff00;
+    top: 215px;
+    left: 320px;
+    animation: trianguloG1 4s ease-out 0.8s backwards;
+    
+}
+#triangle3 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 0 150px 150px;
+    border-color: transparent  transparent transparent  #ff7f00 ;
+    top: 373px;
+    left:342px;
+    transform: rotate(45deg);
+    animation: trianguloG2 4s ease-out 0.8s  backwards;
+}
+#triangle4 { 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:   107px 107px 107px 0;
+    border-color: transparent #00ff00 transparent transparent;
+    top: 215px;
+    left: 214px; 
+    animation: trianguloM 4s ease-out 0.8s backwards;
+}
+#triangle5 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 75px 75px 75px 0;
+    border-color: transparent #4b0082 transparent transparent;
+    top: 65px;
+    left: 244px;
+    animation: trianguloP2 4s ease-out 0.8s backwards;
+}
+
+#parallelogram {
+	width: 150px;
+    max-width: 150px;
+	height: 75px;
+    transform: skew(-45deg);
+	-webkit-transform: skew(-45deg);
+	-moz-transform: skew(-45deg);
+	-o-transform: skew(-45deg);
+	background: #ff0000;
+    top:501px;
+    left: 506px;
+    animation: paralelogramo 4s ease-out 0.8s 1 backwards;
+
+}
+
+@media (max-width: 800px) and (min-height: 600px) {
+    #square{
+        width: 53.5px; 
+        height: 53.5px; 
+        left: 130px;
+        top:314px;
+        animation: pequeño 4s ease-out;
+    }
+    #triangle1{
+        border-width: 37.5px 0 37.5px 37.5px;
+        left: 119px;
+        top:265px;
+        animation: pequeño 4s ease-out;
+    }
+    #triangle2{
+        border-width: 75px 0 75px 75px;
+        top: 344px;
+        left: 195px;
+        animation: pequeño 4s ease-out;
+    }
+    #triangle3{
+        border-width: 75px 0 75px 75px;
+        top: 421px;
+        left:208px;
+        animation: pequeño 4s ease-out;
+    }
+    #triangle4{
+        border-width:   53.5px 53.5px 53.5px 0;
+        top: 342px;
+        left: 142px; 
+        animation: pequeño 4s ease-out;
+    }
+    #triangle5{
+        border-width: 37.5px 37.5px 37.5px 0;
+        left: 156px;
+        top:265px;
+        animation: pequeño 4s ease-out;
+    }
+    #parallelogram{
+        width: 75px;
+        height: 37.5px;
+        top:485px;
+        left: 290px;
+        animation: pequeño 4s ease-out;
+    }
+    main{
+        grid-template-columns: 100%;
+    }
+}
+@keyframes pequeño {
+    from{
+        top: 10%;
+        left: 10%;
+    }
+}
+.block{
+    position: absolute;
+}
+@keyframes cuadrado {
+    0%{
+        top:277px;
+        left: 358px;
+    }
+    80%{
+        top:320px;
+        left: 259px;
+    }
+    100%{
+        top: 162px;
+        left: 190px;
+    }
+}
+@keyframes trianguloP1 {
+    0%{
+        top: 181px;
+        left:413px;
+        transform: rotate(180deg);
+    }
+    80%{
+        top:338px;
+        left: 351px;
+        transform: rotate(270deg);
+    }
+    100%{
+        left: 169px;
+        top:65px;
+        
+    }
+}
+@keyframes trianguloP2 {
+    0%{
+        transform: rotate(90deg);
+        top: 296px;
+        left:300px;
+    }
+    80%{
+        top: 150px;
+        left: 449px;
+    }
+    100%{
+        top: 65px;
+        left: 244px;
+        transform: rotate(0);
+    }
+}
+@keyframes trianguloM {
+    0%{
+        transform: rotate(225deg);
+        top: 337px;
+        left:397px;
+    }
+    80%{
+        top:141px;
+        left: 576px;
+        transform: rotate(90deg);
+    }
+    100%{
+        top: 215px;
+        left: 214px;
+        transform: rotate(0);
+    }
+}
+@keyframes trianguloG1 {
+    0%{
+        top: 181px;
+        left: 188px;
+    }
+    80%{
+        top:225px;
+        left:388px;
+        transform: rotate(90deg);
+    }
+    100%{
+        top: 215px;
+        left: 320px;
+    }
+}
+@keyframes trianguloG2 {
+    0%{
+        top:106px;
+        left:263px;
+        transform: rotate(90deg);
+    }
+    80%{
+        top:97px;
+        left: 290px;
+        transform: rotate(135deg);
+    }
+    100%{
+        top: 373px;
+        left:342px;
+        transform: rotate(45deg);
+    }
+}
+@keyframes paralelogramo {
+    0%{
+        top:406px;
+        left: 226px;
+    }
+    80%{ top:301px;
+        left: 125px;}
+    100%{
+        top:501px;
+        left: 506px;
+    }
+}
+@keyframes mensaje {
+    0%{
+        visibility: hidden;
+    }
+    20%{visibility: visible;}
+    80%{
+        visibility: hidden;
+    }
+}
+/*segundo vistazo*/
+.sobremi>h3{
+    padding-top: 10%;
+    font-size: 3em;
+    font-family: 'Walter Turncoat', cursive;
+    overflow: hidden;
+    padding-left: 1em;
+    white-space: nowrap;
+    animation: typing 4s steps(30) 1 normal both;
+}
+#sobremi{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    color: #ffffff;
+}
+q{
+    font-style: italic;
+}
+.sobremi:nth-child(1){
+    width: 50%;
+    float: left;
+    font-family: monospace;
+}
+.sobremi:nth-child(2){
+    display: flex;
+}
+.sobremi>img{
+    max-width:85%;
+    height: auto;
+    margin: auto;
+    border-radius: 40% 0 40% 0;
+    animation: aparecer 3s ease-in-out backwards, bordes 4s ease-in-out infinite;
+}
+.sobremi>p{
+    font-size: 1.5em;
+    padding-left: 2em;
+    margin-top: 1em;
+}
+#skills{
+    margin-top:2em;
+    margin-left: 3em;
+}
+#skills section{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+q{
+    display: block;
+    text-align: center;
+}
+@media (max-width: 820px) {
+    .sobremi>img{
+        max-width: 45%;
+        margin-top:10%;
+        margin-bottom:10%;
+    }
+    .sobremi>p{
+        padding-left: 1em;
+    }
+    #skills{
+        margin-left: 1em;
+    }
+}
+
+@keyframes bordes {
+    0%{
+        border-radius: 0 40% 0 40%;
+    }
+    50%{
+        border-radius: 40% 0 40% 0;
+    }
+    100%{
+        border-radius: 0 40% 0 40%;
+    }
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+/*tercer vistazo*/
+#proyectos{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+#proyectos>section{
+    background-color: #62929E;
+    
+}
+#modales{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+}
+#modales a{
+    width: 33.33%;
+    height: 35vh;
+    float: left;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    border: white 1px solid;
+    cursor:pointer;
+    transition: all 0.7s;
+    flex-grow: 1;
+}
+#histo{
+    background-image: url(/imagen/diseño-terror.png);
+    background-position: center;
+}
+#galeria{
+    background-image: url(/imagen/Diseño\ de\ la\ App.jpg);
+}
+#vet{
+    background-image: url(/imagen/diseño-vet-pantalla.jpg);
+}
+#mentorias{
+    background-image: url(/imagen/App\ y\ sitio\ web\ responsive\ de\ servicio\ de\ mentorias\ y\ bolsa\ de\ empleo\ para\ recien\ graduados..jpg);
+}
+#modales a:hover{
+    filter: brightness(.7);
+    background-size: 110%;
+
+}
+#proyectos h3{
+    padding: 5% 0 2% 0;
+    font-size: 3em;
+    text-align: center;
+}
+#proyectos h4{
+    font-size: 2em;
+}
+#proyectos p, #modales h4{
+    background-color: #000000c2;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 820px) {
+    #modales a{
+        width: 100%;
+        height: 20vh;
+    }
+    .sobremi{
+        width: 100% !important;
+    }
+    main>section:nth-child(2), main>section:nth-child(1){
+        grid-column: 1/3;
+    }
+    .modal h4{
+        font-size: 1.2em !important;
+    }
+    .enlacemodal{
+        width: 100% !important;
+    }
+    .imgspan img{
+        display: none;
+    }
+    .modal h5{
+        width: 100%;
+    }
+    h2{font-size: 2.5em;}
+    h3{font-size: 2em !important;}
+    h4{font-size: 1.5em !important;}
+    p{font-size: 1em !important;}
+    main{
+        grid-template-rows: 95vh 95vh 95vh 30vh;
+    }
+    nav img{
+        display: none;
+    }
+    #menu{
+        display: none;
+    }
+    nav>span{
+        content: url(/imagen/icons8-menú-48.svg);
+        color: #ffffff;
+        display: block;
+        width: 40px;
+        margin-top: 40%;
+        background-color: #130c01;
+    }
+    .boton{
+        content: url(/imagen/letter_x_2.svg);
+        width: 40px;
+        height: 40px;
+    }
+    #menu{
+        height: 50px;
+        width: 100px;
+    }
+    #menu a{
+        width: 130px;
+        position: relative;
+        background-color: #130c01;
+        writing-mode:horizontal-tb;
+        margin: 0;
+        margin-left: 20%;
+        line-height: 2em;
+        transform: rotate(0);
+    }
+}
+@media (max-width: 500px){
+    #square{
+        top: 114px;
+        left: 70px;
+        width: 53.5px; 
+        height: 53.5px; 
+    }
+    #triangle1{
+        left: 59px;
+        top: 65px;
+        border-width: 37.5px 0 37.5px 37.5px;
+    }
+    #triangle2{
+        top:144px;
+        left: 135px;
+        border-width: 75px 0 75px 75px;
+    }
+    #triangle3{
+        top: 221px;
+        left: 148px;
+        border-width: 75px 0 75px 75px;
+    }
+    #triangle4{
+        top: 142px;
+        left: 82px;
+        border-width:   53.5px 53.5px 53.5px 0;
+    }
+    #triangle5{
+        border-width: 37.5px 37.5px 37.5px 0;
+        top:65px;
+        left: 96px;
+    }
+    #parallelogram{
+        top: 285px;
+        left: 230px;
+        width: 75px;
+        height: 37.5px;
+    }
+    .mensaje{
+        margin-left: 70%;
+    }
+    .sobremi>h3 {
+        padding-left: 0.5em;
+    }
+}
+.modal{
+    display: none;
+}
+.modal:target{
+    position: absolute;
+    z-index: 200;
+    
+    display: block;
+}
+.modal .close {
+    position: relative;
+    display: block;
+}
+.modal .close::after {
+    right: -1rem;
+    top: -5rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: flex;
+    z-index: 90;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    border-radius: 50%;
+    color: white;
+    content: "×";
+    cursor: pointer;
+}
+/*.modal .close::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    content: "";
+    cursor: default;
+}
+*/
+.modal article{
+    width: 90vw;
+    height: 100%;
+    padding: 1%;
+}
+.modal h4{
+    margin-bottom: 2%;
+    margin-top: 4%;
+    font-family: 'Walter Turncoat', cursive;
+}
+.modal span{
+    display: block;
+    width: 80%;
+    float: left;
+}
+.modal div{
+    width: 20%;
+    float: left;
+}
+.modal img, .modal h5, .enlacemodal{
+    float: left;
+    font-size: 1em;
+}
+.enlacemodal{
+    width: 30vw;
+    padding: 2%;
+    text-decoration: underline;
+}
+.modal img{
+    max-width: 15vw;
+    height: auto;
+}
+.modal span{
+    font-size: 1em;
+    padding: 1%;
+}
+.modal span>img{
+    max-width: 20%;
+    height: auto;
+}
+.modal span>.desktop{
+    max-width: 50%;
+    height: auto;
+}
+.modal span>.tablet{
+    max-width: 30%;
+    height: auto;
+}
+.imgspan{
+    width: 25vw !important;
+}
+
+/*cuarto vistazo*/
+#contacto{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+}
+#contacto img{
+    width: 4%;
+    margin: 3% 2% 3% ;
+}
+#contacto>a{
+    border: 1px #62929E solid;
+    display: inline-block;
+    padding: 1.5%;
+    background-color: #62929E;
+    font-size: 1.5em;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: #ffffff 0 0 1px 0, #ffffff 0 3px 4px 0;
+    transition: all 0.5s;
+}
+#contacto>a:hover{
+    transform: scale(1.09);
+    background-color: #ffffff;
+    color: #130c01;
+    box-shadow: #62929E 0 0 1px 0, #62929E 0 3px 4px 0;
+}
+#contacto section{
+    background-color: #000000c2;
+    border-top: #62929E 2px solid;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    padding: 6%;
+}
+#contacto p>a:hover{
+    text-decoration: underline;
+}
+#contacto h3{
+    font-size: 3em;
+    padding: 10%;
+    animation: aparecer 2s ease-in-out backwards;
+}
+@media   (max-width: 820px){
+    #contacto h3{
+    padding-left: 0%;
+    padding-right: 0%;}
+}
