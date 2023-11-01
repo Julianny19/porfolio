@@ -1,89 +1,226 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.5.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.5.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.5.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.5.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.5.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.5.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.5.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.5.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.5.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.5.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=4">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/rest-stylos.css">
+    <link rel="stylesheet" href="/css/style1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Julianny Camacho </h1>
+        </header>
+        <main>
+            <section id="puzzle">
+                <div id="square" class="block rotate"></div>
+                <div id="triangle1" class="block rotate"></div>
+                <div id="triangle2" class="block rotate"></div>
+                <div id="triangle3" class="block rotate"></div>
+                <div id="triangle4" class="block rotate"></div>
+                <div id="triangle5" class="block rotate"></div>
+                <div id="parallelogram" class="block"></div>
+                <div class="mensaje">Pulsa y arrastra las piezas para formar distintas formas</div>
+            </section>
+            <section>
+                <h2>Web Developer &  <br> UX Designer </h2>
+            </section>
+            <div id="sobremi">
+                <section class="sobremi">
+                    <h3 class="pausa">Hola, Soy Julianny</h3>
+                    <p>¡Bienvenido a mi portafolio!<br> Me considero una persona creativa y autodidacta, que no le teme a los retos y adora aprender cosas nuevas. <br>
+                    Soy una apasionada al arte y soy feliz combinando  esa pasión con el diseño. Tengo un certificado en creación de páginas web y mi nuevo reto era aprender y profesionalizarse en el diseño UX. <br>
+                    <br>Mi lema es:
+                    <q>Puede que no sepa algo hoy, pero trabajare incansablemente para saberlo mañana</q>
+                </p>
+                <div id="skills">
+                    <section>   
+                        <p>Mis habilidades:</p>
+                        <ul>
+                            <li>Flujos de usuarios</li>
+                            <li>Esquemas de pagína</li>
+                            <li> Prototipos</li>
+                            <li> Diseño de interacción</li>
+                            <li>Sitemap y AI</li>
+                            <li>Dominio del DOM</li>
+                            <li>HTML</li>
+                            <li>CSS </li>
+                            <li>JavaScript</li>
+                            <li>JSON</li>
+                            <li>Sass</li>
+                        </ul>
+                    </section> 
+                    <section>
+                        <p>Herramientas: </p>
+                        <ul>
+                            <li>Figma</li>
+                            <li>Adobe XD</li>
+                            <li>Visual Studio Code</li>
+                            <li>Dreamweaver</li>
+                            <li>Wordpress</li>
+                            <li>Prestashop</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Canva</li>
+                            <li>Google Analitics</li>
+                            <li>Search Console</li>
+                        </ul>  
+                    </section>
+                </div>
+                
+                </section>
+                <section class="sobremi">
+                    <img src="/imagen/IMG_20220918_192324.jpg" alt="foto" class="pausa">
+                </section>
+            </div>
+            <div  id="proyectos">
+                <section class="modal" id="modal">
+                    <article>
+                        <h4>Creación y diseño de página web de relatos literarios</h4>
+                        <a href="#proyectos" class="close"></a>
+                        <div>
+                            <img src="/imagen/diseño-terro1.png"> 
+                            <img src="/imagen/diseño-terror2.png"> 
+                        </div>
+                        <span>En este proyecto uní dos de mis grandes pasiones, la literatura clásica, especialmente si es de terror, y la creación de páginas web. Usando wordpress de base y adaptando los estilos con HTML, CSS y JavaScript. La idea era crear una página web accesible y simple de usar  que te brindara un recorrido por obras literarias de terror y obras pictóricas del romanticismo, logrando así un ambiente de misterio.</span>
+                        <h5>El Problema</h5>
+                        <span>La falta de páginas nicho sobre literatura de terror, y la poca información sobre autores no tan conocidos.</span>
+                        <h5>El objetivo</h5>
+                        <span>Brindar un página donde se pusiera en valor algunas obras literarias, con su respectivo análisis; y así mismo la vida del autor que la creo y cuáles fueron sus percepciones de la sociedad que lo produjo.</span>
+                        <h5>Mi rol</h5>
+                        <span>Diseñador web-copywriten.</span>
+                        <h5>Responsabilidades</h5>
+                        <span>Diseñar la interfaz, crear y perfeccionar las pantallas, escribir y redactar los contenidos, tomar en cuenta la accesibilidad, volver el diseño responsive.</span>
+                        <span class="imgspan"><img src="/imagen/diseño-terror3.png" class="desktop"><img src="/imagen/diseño-terror4.png" class="desktop"></span>
+                        <a href="https://historiasdeterror.org/" target="_blank" class="enlacemodal">Para ir a la pagína web</a>
+                    </article>
+                </section>
+                <section class="modal" id="modal2">
+                    <article>
+                        <h4>Diseño de aplicacion para galería Galery</h4>
+                        <a href="#proyectos" class="close"></a>
+                        <img src="/imagen/inicio-app-galery.png">
+                        <span>Galería Gallery es una galería regional ubicada en una ciudad principalmente artística, como lo es Santiago de Compostela. Gallery ofrece una muestra de exhibiciones permanentes y recurrentes dirigidas a los apasionados al arte que busquen más información sobre las obras exhibidas.</span>
+                        <h5>El Problema</h5>
+                        <span>Los amantes del arte suelen buscar más  información precisa sobre las obras de arte y frecuentemente buscan nuevas maneras de recorrer y disfrutar de las exhibiciones.</span>
+                        <h5>El objetivo</h5>
+                        <span>Diseñar una app que permita a los visitantes y clientes de la galería buscar toda la informacion de la obra con solo tomar una foto de esta, además de ofrecer recorridos virtuales.</span>
+                        <h5>Mi rol</h5>
+                        <span>Diseñador de UX a cargo de crear la apliaccion Gallery desde su concepción hasta la entrega.</span>
+                        <h5>Responsabilidades</h5>
+                        <span>Realización de entrevistas, esquemas de papel y digitales, creación de prototipos de baja y alta fidelidad, realización de estudios de facilidad de uso, accesibilidad e iteración de diseños.</span>
+                        <span class="imgspan"><img src="/imagen/diseño-app-gallery1.png"><img src="/imagen/diseño-app-gallery2.png"><img src="/imagen/diseño-app-gallery3.png"></span>
+                        <a href="/pdf/Diseño de la App.pdf" target="_blank" class="enlacemodal">Para ver caso practico completo</a>
+                        <a href="https://www.figma.com/proto/Jpm7mdhnLdrJ6lvTz6s5MX/version-nueva-(Copy)?type=design&node-id=217-215&t=SrJzwSLADVIKpuxg-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=217%3A215" target="_blank" class="enlacemodal">Para probar prototipo</a>
+                    </article>
+                </section>
+                <section class="modal" id="modal3">
+                    <article>
+                        <h4>Diseño responsive de flujo de citas para veterinaria</h4>
+                        <a href="#proyectos" class="close"></a>
+                        <div>
+                            <img src="/imagen/diseño-vet.png"> <br>
+                            <img src="/imagen/diseño-vet-2.png">
+                        </div>
+                        <span>Mi misión fue crear un flujo de usuario para la solicitud de citas en una clínica veterinaria, enfocándonos en posibles veterinarias pequeñas con énfasis en su crecimiento como empresa, que desean volver su gestión de citas más dinámica y fácil.</span>
+                        <h5>El Problema</h5>
+                        <span>Las pequeñas veterinarias suelen tener problemas para pasar del papel a la gestión de citas online, las soluciones que da el mercado actual, son muy grandes para ellos, o incluyen una serie de componente innecesarios para su tipo de empresa.</span>
+                        <h5>El objetivo</h5>
+                        <span>Diseñar un sitio web responsive que responda a las necesidades de pequeñas veterinarias, enfocadas en su crecimiento, que funcione como un flujo de usuario simple e intuitivo para sus futuros clientes.</span>
+                        <h5>Mi rol</h5>
+                        <span>Diseñador de UX a cargo de crear la pagina web de flujo de citas desde su concepción hasta la entrega.</span>
+                        <h5>Responsabilidades</h5>
+                        <span>Realización de entrevistas, esquemas de papel y digitales, creación de prototipos de baja y alta fidelidad, realización de estudios de facilidad de uso, accesibilidad e iteración de diseños.</span>
+                        <span class="imgspan"><img src="/imagen/diseño-vet.desktop.png" class="desktop"><img src="/imagen/diseño-vet-tblet.png" class="tablet"><img src="/imagen/diseño-vet-movil.png"></span>
+                        <a href="/pdf/Diseño responsive flujo de citas para veterinaria (1).pdf" target="_blank" class="enlacemodal">Para ver caso practico completo</a>
+                        <a href="https://xd.adobe.com/view/de7249b5-4b76-4252-8b16-dde73a20d428-8b21/" target="_blank" class="enlacemodal">Para probar prototipo Desktop</a>
+                        <a href="https://xd.adobe.com/view/8af73459-e44a-4232-b22b-a1bbda2e0dd1-dfa4/" target="_blank" class="enlacemodal">Para probar prototipo Movil</a>
+                    </article>
+                </section>
+                <section class="modal" id="modal4">
+                    <article>
+                        <h4>Diseño para app y sitio web responsive de mentorias</h4>
+                        <a href="#proyectos" class="close"></a>
+                        <div>
+                            <img src="/imagen/diseño-mentorias.png"> 
+                        </div>
+                        <span>Para este proyecto consideramos a los recién graduado universitarios y sus luchas por acceder a un mercado laboral cada vez más abarrotado, realizamos pues Ready To Work un servicio de mentorías profesional, bolsa de empleo y distintas herramientas para ayudar a los jóvenes en su búsqueda laboral.</span>
+                        <h5>El Problema</h5>
+                        <span>Cada días son más los universitarios que salen al mundo laboral sin tener los conocimientos básicos de  como buscar un empleo, preparados académicamente pero sin poder acceder a un empleo digno por meses. Incluso algunos de ellos sin poder ejercer su profesión por falta de oportunidades.</span>
+                        <h5>El objetivo</h5>
+                        <span>Diseñar un servicio de mentores y bolsa de empleo para una fundación sin fines de lucro que buscara aplacar la falta de inserción laboral. Esta incluirá convenios con distintas empresas para brindar esa primera oportunidad laboral, reclutara mentores profesionales y brindara una serie de recursos para que el candidato sepa gestionar una búsqueda exitosa de empleo.</span>
+                        <h5>Mi rol</h5>
+                        <span>Diseñador UX, encargado de realizar el sitio web responsive y la aplicación de Ready To Work desde su concepción asta su entrega.</span>
+                        <h5>Responsabilidades</h5>
+                        <span>Realización de entrevistas, esquemas de papel y digitales, creación de prototipos de baja y alta fidelidad, realización de estudios de facilidad de uso, accesibilidad e iteración de diseños.</span>
+                        <span class="imgspan"><img src="/imagen/diseño-mentorias-2.png" class="desktop"><img src="/imagen/diseño-mentorias.2.png"><img src="/imagen/diseño-mentorias-3.png"></span>
+                        <a href="/pdf/App y sitio web responsive de servicio de mentorias y bolsa de empleo para recien graduados..pdf" target="_blank" class="enlacemodal">Para ver caso practico completo</a>
+                        <a href="https://www.figma.com/proto/QGTZrTj24ydnCvmOEtl8Eu/Untitled?type=design&node-id=36-9795&t=9VSZ39dD60WqIBSz-1&scaling=scale-down&page-id=36%3A9794&starting-point-node-id=36%3A9795" target="_blank" class="enlacemodal">Para probar prototipo App</a>
+                        <a href="https://www.figma.com/proto/QGTZrTj24ydnCvmOEtl8Eu/Untitled?type=design&node-id=184-28210&t=rCeXA9nIOY8q3SgB-1&scaling=scale-down&page-id=122%3A21791&starting-point-node-id=122%3A23009" target="_blank" class="enlacemodal">Para probar prototipo sitio web</a>
+                    </article>
+                </section>
+                <h3>Proyectos</h3>
+                <section id="modales">
+                    
+                    <a href="#modal" id="histo">
+                        <h4>historiasdeterror.org</h4>
+                        <p>Diseño web-copywriten<br>
+                        tecnologías: wordpress, html, css</p>
+                    </a>
+                    <a href="#modal2" id="galeria">
+                        <h4>Galeria Gallery</h4>
+                        <p>Diseño UX<br>
+                        tecnologías: Figma</p>
+                    </a>
+                    <a href="#modal3" id="vet">
+                        <h4>Veterinaria Huellas</h4>
+                        <p>Diseño UX<br>
+                        tecnologías: Adobe XD</p>
+                    </a>
+                    <a href="#modal4" id="mentorias">
+                        <h4>Sitio para mentorias profesionales </h4>
+                        <p>Diseño UX<br>
+                        tecnologías: Figma</p>
+                    </a>
+                </section>  
+            </div>
+            <div id="contacto">
+                <h3 class="pausa">¿trabajamos juntos?</h3>
+                <a href="mailto:anny.19396@gmail.com">Contactame</a>
+                <section>
+                    <p>
+                        <a href="#">Resumen curricular</a> ||
+                        <a href="#">BEHANCE</a>
+                    </p>
+                    <a href="#"><img src="/imagen/logo_linkedin.svg"></a>
+                    <a href="#"><img src="/imagen/github_logo_2.svg"></a>
+                    <a href="#"><img src="/imagen/logo_instagram.svg"></a>
+                    <p> © Julianny Camacho</p>
+                </section>
+                
+            </div>
+        </main>
+        
+        <nav>
+            <span id="boton"></span>
+            <section id="menu">
+                <a href="#sobremi">Sobre Mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+                <img src="/imagen/icon.jpg">
+            </section>
+        </nav>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <script src="/js/index.js"></script>
+    <script src="/js/jquery.ui.touch-punch.min.js"></script>
+</body>
 </html>
