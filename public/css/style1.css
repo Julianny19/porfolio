@@ -469,6 +469,9 @@ q{
     transition: all 0.7s;
     flex-grow: 1;
 }
+#gatos{
+    background-image: url(/imagen/glosario-gatos-img.png);
+}
 #histo{
     background-image: url(/imagen/diseño-terror.png);
     background-position: center;
@@ -503,7 +506,7 @@ q{
 @media (max-width: 820px) {
     #modales a{
         width: 100%;
-        height: 20vh;
+        height: 17vh;
     }
     .sobremi{
         width: 100% !important;
@@ -528,7 +531,7 @@ q{
     h4{font-size: 1.5em !important;}
     p{font-size: 1em !important;}
     main{
-        grid-template-rows: 95vh 95vh 95vh 30vh;
+        grid-template-rows: 95vh 95vh 100vh 35vh;
     }
     nav img{
         display: none;
